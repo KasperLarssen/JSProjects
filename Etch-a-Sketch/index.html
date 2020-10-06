@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Etch-a-Sketch</title>
+</head>
+
+<body>
+    <h1 class="main-title">Etch-A-Sketch</h1>
+
+    <div id="gridContainer"></div>
+
+    <div id="inputAndButtonContainer">
+        <form onsubmit="updateGrid();">
+            Enter grid size: <input type="text" id="userInput">
+            <input type="submit" value="Create grid">
+        </form>
+        <button id="clear" onclick="testGrid();">Clear grid</button>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+html,
+body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+#gridContainer {
+    position: relative;
+    padding: 10px;
+    display: inline-grid;
+    background-color: aquamarine;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: fit-content;
+    grid-gap: 5px;
+}
+
+.flex-item {
+    display: table-cell;
+    border: 1px solid #000;
+    height: 30px;
+    width: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#inputAndButtonContainer {
+    text-align: center;
+}
