@@ -60,6 +60,16 @@ rainbow.addEventListener('click', function () {
     }
 });
 
+const normal = document.querySelector('#normalMode');
+normal.addEventListener('click', function () {
+    let cell = gridContainer.children;
+    for (let i = 0; i < 2500; i++) {
+        cell[i].addEventListener('mouseover', function (event) {
+            event.target.style.backgroundColor = 'black';
+        })
+    }
+});
+
 function getRandomColor() {
     const randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
     return randomColor;
