@@ -5,21 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&family=Oswald&display=swap"
+        rel="stylesheet">
     <title>Etch-a-Sketch</title>
 </head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<body>
-    <h1 class="main-title">Etch-A-Sketch</h1>
-
+<body onload="defaultGrid();">
+    <h1 class="main-title">Etch-<redTitle>A</redTitle>-Sketch</h1>
+    <div id="inputAndButtonContainer">
+        <form onsubmit="return false">
+            Enter grid size (0-50): <input type="text" id="userInput">
+        </form>
+        <div id="createAndClearContainer">
+            <button id="create" onclick="updateGrid();">Create grid</button>
+            <button id="clear" onclick="clearGrid();">Clear grid</button>
+        </div>
+        <div id="rainbowButtonContainer">
+            <button id="rainbowMode" onclick="enableRainbowMode">Rainbow Mode</button>
+        </div>
+    </div>
     <div id="gridContainer"></div>
 
-    <div id="inputAndButtonContainer">
-        <form onsubmit="updateGrid();">
-            Enter grid size: <input type="text" id="userInput">
-            <input type="submit" value="Create grid">
-        </form>
-        <button id="clear" onclick="testGrid();">Clear grid</button>
-    </div>
     <script src="./app.js"></script>
 </body>
 
